@@ -1,0 +1,19 @@
+<div class="card" style="width: 18rem; margin: 50px; ">
+  <img [src]="prd?.img" class="card-img-top" appBorderBox>
+  <div class="card-body">
+    <h5 class="card-title">{{prd?.name}}</h5>
+    <div class="card-text">
+        <h5>Price : {{prd?.price}}</h5>
+        <h5>Quantity : {{prd?.quantity}}</h5>
+    </div>
+  </div>
+
+  <div class="btn-group" role="group" aria-label="Basic example">
+   <button (click)="nextFunc()" class="btn btn-danger" [disabled]="currentprdID==prdidList[prdidList.length-1]">Next</button>
+   <button (click)="prevFunc()" class="btn btn-warning" [disabled]="currentprdID==prdidList[0]">Previous</button>
+   <button (click)="backFunc()" class="btn btn-success">Back</button>
+</div>
+    </div>
+
+
+

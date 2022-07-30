@@ -1,0 +1,30 @@
+<!-- <button (click)="InsertNewProduct()" class="btn btn-primary">Add New Product</button> -->
+
+<form #prdform="ngForm" (ngSubmit)="InsertNewProduct()">
+    <div class="mb-3">
+     <label for="prdname" class="form-label text-danger">Product Name</label>
+       <input #prdNameInput type="text" class="form-control" id="prdname" name="prdname" [(ngModel)]="newprd.name"> 
+    </div>
+
+    <div class="mb-3">
+     <label for="quantity" class="form-label text-danger">Quantity</label>
+       <input type="number" class="form-control" id="quantity" name="quantity" [(ngModel)]="newprd.quantity">
+    </div>
+
+    <div class="mb-3">
+     <label for="price" class="form-label text-danger">Price</label>
+       <input type="number" class="form-control" id="price" name="price" [(ngModel)]="newprd.price">
+    </div>
+
+  <div class="mb-3">
+    <label for="prdCat" class="form-label text-danger">Select Category</label>
+        <select name="prdCat" id="prdCat" class="form-control" [(ngModel)]="newprd.CateogryID">
+        <option *ngFor="let cat of catList" [value]="cat.id">{{cat.name}}</option>
+        </select>    
+    </div>
+
+    <button type="submit" class="btn btn-success" [disabled]="prdform.invalid">Submit</button>
+
+</form>
+
+<h2>{{newprd | json}}</h2>

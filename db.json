@@ -1,0 +1,67 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Mobiles"
+    },
+    {
+      "id": 2,
+      "name": "TV"
+    },
+    {
+      "id": 3,
+      "name": "Laptops"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "LG",
+      "price": 12000,
+      "quantity": 4,
+      "CateogryID": 2,
+      "img": "assets/images/lg.jpg'"
+    },
+    {
+      "id": 2,
+      "name": "Samsaung",
+      "price": 10000,
+      "quantity": 5,
+      "CateogryID": 1,
+      "img": "assets/images/sam.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Lenovo",
+      "price": 9000,
+      "quantity": 3,
+      "CateogryID": 3,
+      "img": "assets/images/images.png"
+    },
+    {
+      "id": 4,
+      "name": "Oppo",
+      "price": 11000,
+      "quantity": 2,
+      "CateogryID": 1,
+      "img": "assets/images/oppo.jpg"
+    },
+    {
+      "name": "Iphone",
+      "quantity": 6,
+      "price": 5000,
+      "CateogryID": "1",
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "name": "xiaome",
+      "quantity": 5,
+      "price": 2000,
+      "CateogryID": "1",
+      "id": 7
+    }
+  ]
+}

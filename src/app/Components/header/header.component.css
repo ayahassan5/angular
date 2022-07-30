@@ -1,0 +1,18 @@
+.bg-color{
+background-color: rgb(41, 36, 36);
+}
+.navbar-brand{
+  color: rgb(33, 187, 84);
+}
+
+.nav-link {
+  color: rgb(201, 189, 189);
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px;
+}
+
+.nav-link:hover {
+  color: orange;
+  text-decoration: none;
+}
